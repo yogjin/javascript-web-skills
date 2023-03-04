@@ -26,5 +26,5 @@ const debounce = (func, delay) => {
   };
 };
 
-$defaultInput.addEventListener('input', ajaxRequest);
-$debounceInput.addEventListener('input', debounce(ajaxRequest2, 1000));
+$defaultInput.addEventListener('input', ajaxRequestDefault);
+$debounceInput.addEventListener('input', debounce(ajaxRequestDebounce, 1000));
