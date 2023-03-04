@@ -26,5 +26,5 @@ const logThrottle = () => {
   $resizeThrottle.innerHTML += ` ${++countThrottle}`;
 };
 
-window.addEventListener('resize', logDefault);
-window.addEventListener('resize', throttle(logThrottle, 500));
+window.addEventListener('scroll', logDefault);
+window.addEventListener('scroll', throttle(logThrottle, 500));
