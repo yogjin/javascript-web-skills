@@ -1,5 +1,5 @@
-const $resizeDefault = document.querySelector('#resize-default');
-const $resizeThrottle = document.querySelector('#resize-throttle');
+const $scrollDefault = document.querySelector('#scroll-default');
+const $scrollThrottle = document.querySelector('#scroll-throttle');
 let countDefault = 0;
 let countThrottle = 0;
 
@@ -19,11 +19,11 @@ const throttle = (func, delay) => {
 };
 
 const logDefault = () => {
-  $resizeDefault.innerHTML += ` ${++countDefault}`;
+  $scrollDefault.innerHTML += ` ${++countDefault}`;
 };
 
 const logThrottle = () => {
-  $resizeThrottle.innerHTML += ` ${++countThrottle}`;
+  $scrollThrottle.innerHTML += ` ${++countThrottle}`;
 };
 
 window.addEventListener('scroll', logDefault);
